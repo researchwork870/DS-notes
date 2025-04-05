@@ -15,19 +15,26 @@ The core idea of KNN is straightforward: to predict the label or value of a new 
 ### Mathematical Foundations
 KNN relies on distance metrics to measure similarity between data points. Given two points \( x = (x_1, x_2, ..., x_n) \) and \( y = (y_1, y_2, ..., y_n) \) in an n-dimensional space, common distance metrics include:
 
-1. **Euclidean Distance** (most common):
-   \[
-   d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
-   \]
-2. **Manhattan Distance**:
-   \[
-   d(x, y) = \sum_{i=1}^{n} |x_i - y_i|
-   \]
-3. **Minkowski Distance** (generalization):
-   \[
-   d(x, y) = \left( \sum_{i=1}^{n} |x_i - y_i|^p \right)^{1/p}
-   \]
-   - When \( p = 2 \), it’s Euclidean; when \( p = 1 \), it’s Manhattan.
+**Euclidean Distance (most common):**
+
+$$
+d(x, y) = \sqrt{\sum_{i=1}^{n} (x_i - y_i)^2}
+$$
+
+**Manhattan Distance:**
+
+$$
+d(x, y) = \sum_{i=1}^{n} |x_i - y_i|
+$$
+
+**Minkowski Distance (generalization):**
+
+$$
+d(x, y) = \left( \sum_{i=1}^{n} |x_i - y_i|^p \right)^{1/p}
+$$
+
+When \( p = 2 \), it’s Euclidean; when \( p = 1 \), it’s Manhattan.
+
 
 For classification:
 - The algorithm identifies the \( k \) nearest neighbors and assigns the class with the most votes.
