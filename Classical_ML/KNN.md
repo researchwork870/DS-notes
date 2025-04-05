@@ -135,12 +135,24 @@ For regression:
 3. **Confusion Matrix**: Visualizes true vs. predicted labels.
 
 ### For Regression
-1. **Mean Squared Error (MSE)**:
-   - \( \text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2 \)
-2. **Mean Absolute Error (MAE)**:
-   - \( \text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i| \)
-3. **R-squared**: Measures how well the model explains variance in the data.
-   - \( R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2} \)
+**Mean Squared Error (MSE):**
+
+$$
+\text{MSE} = \frac{1}{n} \sum_{i=1}^{n} (y_i - \hat{y}_i)^2
+$$
+
+**Mean Absolute Error (MAE):**
+
+$$
+\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |y_i - \hat{y}_i|
+$$
+
+**R-squared:** Measures how well the model explains variance in the data.
+
+$$
+R^2 = 1 - \frac{\sum (y_i - \hat{y}_i)^2}{\sum (y_i - \bar{y})^2}
+$$
+
 
 ---
 
